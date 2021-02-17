@@ -14,7 +14,7 @@ function authorize(roles = []) {
             }
 
             // autorización exitosa
-            req.user.role = user.role;
+            req.user = user;
             next();
         }
     ]
